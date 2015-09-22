@@ -1,0 +1,30 @@
+
+<% if current_user %>
+	<div class="row">
+  		<div class="col-md-8 col-md-offset-2">
+    		<h1>Top Tweets</h1>
+    			<% if is_logged_in %>
+    				<ul class="list-unstyled">
+      					<% @tweets.each do |t| %>
+       						<li>
+        						<div class="well row <%= cycle('white-bg', '') %>">
+          							<div class="col-sm-4 text-center">
+                						<h4><%= t.user.name %></h4>
+           							</div>
+           						<div>
+              							<p><%= t.text %></p>
+        					</li>
+        		<% end %>
+    				</ul>
+    				<% end %>
+  		</div>
+	</div>
+   
+	<% else %>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+		<div class="well"><h1>Find the top links shared in your networks.</h1></div>
+	</div>
+	</div>
+<% end %>
+

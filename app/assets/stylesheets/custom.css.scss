@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default{border-radius:0;border: 0;background: none; background: #2e9ad7;}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.well.white-bg {
+  background-color: white;
+}
