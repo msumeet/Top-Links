@@ -24,7 +24,8 @@ gem 'omniauth-twitter'
 gem 'twitter'
 # Used for Website Design
 gem 'bootstrap-sass', '~> 3.3.5'
-
+# Used for securing api keys
+gem 'figaro'
 # For Heroku
 group :production do
   gem 'pg'
